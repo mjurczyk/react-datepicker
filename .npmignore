@@ -1,0 +1,14 @@
+coverage/
+docs/
+docs-site/
+examples/
+lib/
+node_modules/
+scripts/
+src/*.js
+src/*.jsx
+test/
+*.js
+*.lock
+*.md
+*.yml
