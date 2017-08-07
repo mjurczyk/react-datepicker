@@ -1,3 +1,8 @@
+### README.md forked from the original repository for informational purposes only. May no longer apply in the current version.
+
+---
+
+
 # React Date Picker
 
 [![npm version](https://badge.fury.io/js/react-datepicker.svg)](https://badge.fury.io/js/react-datepicker)

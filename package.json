@@ -10,7 +10,7 @@
   "name": "react-datepicker",
   "description": "A simple and reusable datepicker component for React - now even better!",
   "private": true,
-  "version": "🔥",
+  "version": "1.0.0",
   "license": "MIT",
   "homepage": "https://github.com/mjurczyk/react-datepicker",
   "main": "dist/react-datepicker.min.js",
