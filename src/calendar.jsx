@@ -56,7 +56,6 @@ export default class Calendar extends React.Component {
     showWeekNumbers: PropTypes.bool,
     showYearDropdown: PropTypes.bool,
     startDate: PropTypes.object,
-    todayButton: PropTypes.string,
     useWeekdaysShort: PropTypes.bool,
     utcOffset: PropTypes.number,
     weekLabel: PropTypes.string,
@@ -245,19 +244,6 @@ export default class Calendar extends React.Component {
     )
   }
 
-  renderTodayButton = () => {
-    if (!this.props.todayButton) {
-      return
-    }
-    return (
-      <div
-          className="react-datepicker__today-button"
-          onClick={e => this.props.onSelect(moment.utc().utcOffset(this.props.utcOffset).startOf('date'), e)}>
-        {this.props.todayButton}
-      </div>
-    )
-  }
-
   renderMonths = () => {
     var monthList = []
     for (var i = 0; i < this.props.monthsShown; ++i) {
@@ -316,7 +302,6 @@ export default class Calendar extends React.Component {
         {this.renderPreviousMonthButton()}
         {this.renderNextMonthButton()}
         {this.renderMonths()}
-        {this.renderTodayButton()}
         {this.props.children}
       </div>
     )
