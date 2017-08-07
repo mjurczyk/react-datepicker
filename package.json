@@ -9,18 +9,11 @@
   ],
   "name": "react-datepicker",
   "description": "A simple and reusable datepicker component for React - now even better!",
-  "private": true,
   "version": "1.0.0",
   "license": "MIT",
   "homepage": "https://github.com/mjurczyk/react-datepicker",
-  "main": "dist/react-datepicker.min.js",
-  "style": "dist/react-datepicker.min.css",
-  "files": [
-    "*.md",
-    "dist",
-    "lib",
-    "src/stylesheets"
-  ],
+  "main": "react-datepicker.min.js",
+  "style": "react-datepicker.min.css",
   "keywords": [
     "react",
     "datepicker",
@@ -107,6 +100,7 @@
     "react-popper": "^0.7.0"
   },
   "scripts": {
+    "release": "git checkout -b release && mkdir .release && cp ./{package.json,LICENSE} ./.release/ && cp -R dist/ ./.release/ && rm .gitignore && git add . && git commit -m 'Release' && git filter-branch --subdirectory-filter .release",
     "build": "cross-env NODE_ENV=production grunt build",
     "start": "node server.js",
     "test": "cross-env NODE_ENV=test grunt travis",

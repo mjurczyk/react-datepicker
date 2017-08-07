@@ -10,6 +10,7 @@ docs-site/bundle.js
 docs-site/style.css
 *.iml
 .idea
+.release
 
 docs/calendar.md
 docs/date_input.md
