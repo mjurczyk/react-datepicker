@@ -105,6 +105,9 @@ module.exports = function (grunt) {
           new webpack.optimize.UglifyJsPlugin({
             compressor: {
               warnings: false
+            },
+            mangle: {
+              except: [ 'DatePicker' ]
             }
           })
         ],

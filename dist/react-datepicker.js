@@ -105,7 +105,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	var outsideClickIgnoreClass = 'react-datepicker-ignore-onclickoutside';
 	var WrappedCalendar = (0, _reactOnclickoutside2.default)(_calendar2.default);
 
-	console.info(' ☁️ → 📅  Using ACSP React-Datepicker build.');
+	if (false) {
+	  console.info(' 📅  Using custom @mjurczyk/react-datepicker build.');
+	}
 
 	/**
 	 * General datepicker component.
